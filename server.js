@@ -39,7 +39,7 @@ class ServerClass{
             // Set up API router
             const ApiRouterClass = require('./routers/api.router');
             const apiRouter = new ApiRouterClass();
-            this.server.use('/v1', apiRouter.init());
+            this.server.use('/api/v1', apiRouter.init());
 
             // Launch server
             this.launch();
