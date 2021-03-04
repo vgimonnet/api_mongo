@@ -11,6 +11,7 @@ Definition
     const MySchema = new Schema({
         title: String,
         content: String,
+        author: String,
         dateCreated: {
             type: Date,
             default: new Date(),
