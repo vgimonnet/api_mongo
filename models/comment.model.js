@@ -9,9 +9,7 @@ Imports
 Definition
 */
     const MySchema = new Schema({
-        title: String,
         content: String,
-        author: String,
         dateCreated: {
             type: Date,
             default: new Date()
@@ -22,6 +20,6 @@ Definition
 /* 
 Exports
 */
-    const MyModel = mongoose.model('post', MySchema);
+    const MyModel = mongoose.model('comment', MySchema);
     module.exports = MyModel;
 //
